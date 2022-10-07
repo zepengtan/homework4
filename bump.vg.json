@@ -1,0 +1,76 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data" : {
+        "url" : "data/Abortion_BumpData.csv"
+    },
+    "height" : 270,
+    "width" : 941,
+    "params" : [
+        {
+            "name" : "Ranking", "value" : 5, 
+            "bind" : {"input" : "range", "min" : 1, "max" : 10, "step" : 1}
+        }
+    ],
+    "transform" : [{
+        "sort" : [
+            {"field" : "abortionratetotal", "order" : "descending"}
+        ],
+        "window" : [{
+            "op" : "rank",
+            "as" : "rank"
+        }],
+        "groupby": ["year"]
+    },
+    {"filter" : "datum.rank <= Ranking"}
+    ],
+    "encoding" : {
+        "x" : {
+            "field" : "year", 
+            "type" : "ordinal", 
+            "title" : "Year"            
+        },
+        "y" : {"field" : "rank", "type" : "ordinal", "title" : "Ranking"}
+    },
+    "layer" : [
+        {
+            "mark" : {"type" : "line", "interpolate" : "monotone"},
+            "encoding" : {
+                "color" : {"field" : "State"},
+                "size" : {
+                    "condition" : {"param" : "sel", "empty" : false, "value" : 10},
+                    "value" : 3
+                }
+            }
+        },
+        {
+            "params" : [
+                { 
+                    "name" : "sel" , "select" : {"type" : "point", "on" : "click", "fields" : ["State"]},
+                    "bind" : "legend"
+                }
+            ],
+            "mark" : {"type" : "tick", "thickness" : 10},
+            "encoding" : {
+                "color" : {
+                    "condition" : {
+                        "param" : "sel", "empty" : false, "value" : "black"
+                    },
+                    "field" : "State"
+                },
+                "tooltip": [
+                    {"field" : "State", "type" : "ordinal"},
+                    {"field" : "year", "type": "ordinal", "title" : "Year"},
+                    {"field" : "rank", "type" : "ordinal", "title" : "Ranking"},
+                    {"field" : "abortionratetotal", "type" : "quantitative", "title" : "Rate of Cases"}
+                ]
+            }
+        }
+    ],
+    "config" : {
+        "background" : "#f6f1ea",
+        "axis" : {
+            "labelColor" : "#75767b",
+            "titleColor": "#55565b"
+        }
+      }
+}

@@ -1,0 +1,135 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "hconcat" : [
+        {
+            "data": {"url": "data/Abortion_StackedBarData.csv"},
+            "height" : 500,
+            "width" : 416,
+            "layer" : [
+                {
+                    "params" : [{
+                        "name" : "sel_region",
+                        "select" : {"type" : "point", "fields" : ["Region"]}
+                    }],
+                    "transform" : [
+                        {
+                            "calculate" : "indexof(['<15', '15-17', '18-19', '20-24', '25-29', '30-34', '35-39', '>40'], datum.Variable)",
+                            "as": "order"
+                          }
+                    ],
+                    "mark" : "bar",
+                    "encoding" : {
+                        "x" : {
+                            "field" : "Region",
+                            "type" : "ordinal",
+                            "axis" : {
+                                "labelAngle" : 360
+                            }
+                        },
+                        "y" : {
+                            "aggregate" : "sum",
+                            "type" : "quantitative",
+                            "field" : "Value",
+                            "title" : "Total Rate of Cases"
+                        },
+                        "color" : {
+                            "field" : "Variable",
+                            "title" : "Age Group",
+                            "scale" : {
+                                "domain" : ["<15", "15-17", "18-19", "20-24", "25-29", "30-34", "35-39", ">40"],
+                                "range": [
+                                  "#0077bb",
+                                  "#33bbee",
+                                  "#009988",
+                                  "#999933",
+                                  "#ddcc77",
+                                  "#ee7733",
+                                  "#cc3311",
+                                  "#ee3377"
+                                ]
+                              }
+                        },
+                        "order" : {"field" : "order", "type" : "ordinal"},
+                        "tooltip" : [
+                            {"field" : "Region", "type" : "ordinal"},
+                            {"field" : "Variable", "type" : "nominal", "title" : "Age Group"},
+                            {"field" : "Value", "aggregate" : "sum", "type" : "quantitative"}
+                        ]
+                    }
+                },
+                {
+                    "mark" : {
+                        "type" : "text",
+                        "align" : "left",
+                        "baseline" : "middle",
+                        "dx" : -410,
+                        "dy" : -450,
+                        "x" : "width",
+                        "y" : "height",
+                        "text" : ["Click on a bar to select a region"],
+                        "fontSize": 14,
+                        "fontWeight" : "normal",
+                        "color" : "#75767b"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {"url": "data/Abortion_StackedBarData.csv"},
+            "height" : 500,
+            "width" : 417,
+            "transform": [
+                {"filter" : {"param" : "sel_region"}},
+                {
+                    "calculate" : "indexof(['<15', '15-17', '18-19', '20-24', '25-29', '30-34', '35-39', '>40'], datum.Variable)",
+                    "as": "order"
+                  }
+            ],
+            "mark" : "bar",
+            "encoding" : {
+                "x" : {
+                    "aggregate" : "sum",
+                    "type": "quantitative",
+                    "field" : "Value",
+                    "title" : "Total Rate of Cases"
+                },
+                "y" : {
+                    "field" : "State",
+                    "type" : "ordinal"                    
+                },
+                "color" : {
+                    "field" : "Variable",
+                    "title" : "Age Group",
+                    "scale" : {
+                        "domain" : ["<15", "15-17", "18-19", "20-24", "25-29", "30-34", "35-39", ">40"],
+                        "range": [
+                          "#0077bb",
+                          "#33bbee",
+                          "#009988",
+                          "#999933",
+                          "#ddcc77",
+                          "#ee7733",
+                          "#cc3311",
+                          "#ee3377"
+                        ]
+                      }
+                },
+                "order" : {"field" : "order", "type" : "ordinal"},
+                "tooltip" : [
+                    {"field" : "State", "type" : "ordinal"},
+                    {"field" : "Region", "type" : "ordinal"},
+                    {"field" : "Variable", "type" : "nominal", "title" : "Age Group"},
+                    {"field" : "Value", "type" : "quantitative"}
+                ]
+            }
+        }
+    ],
+    "config" : {
+        "background" : "#f6f1ea",
+        "axis" : {
+          "labelColor" : "#75767b",
+          "titleColor": "#55565b"
+      }
+      }
+}
