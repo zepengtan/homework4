@@ -1,0 +1,171 @@
+,State,year,abortionratetotal
+0,District of Columbia,1988,79.3
+1,California,1988,44.9
+2,Hawaii,1988,43.6
+3,New York,1988,41.5
+4,Nevada,1988,37.2
+5,New Jersey,1988,36.0
+6,Maryland,1988,34.9
+7,Connecticut,1988,31.0
+8,Massachusetts,1988,29.6
+9,Delaware,1988,28.9
+51,District of Columbia,1992,68.9
+52,Hawaii,1992,46.0
+53,New York,1992,44.6
+54,California,1992,41.7
+55,Nevada,1992,40.4
+56,Maryland,1992,33.1
+57,New Jersey,1992,32.1
+58,Massachusetts,1992,28.7
+59,Delaware,1992,28.1
+60,Washington,1992,28.0
+102,New York,1996,38.8
+103,Nevada,1996,38.4
+104,District of Columbia,1996,38.1
+105,New Jersey,1996,35.4
+106,California,1996,32.9
+107,Maryland,1996,31.0
+108,Florida,1996,29.4
+109,Massachusetts,1996,28.1
+110,Hawaii,1996,26.5
+111,Illinois,1996,24.4
+153,District of Columbia,2000,40.0
+154,New York,2000,38.3
+155,New Jersey,2000,36.4
+156,Maryland,2000,32.5
+157,California,2000,31.1
+158,Nevada,2000,30.1
+159,Florida,2000,29.7
+160,Delaware,2000,22.5
+161,Hawaii,2000,22.2
+162,Connecticut,2000,21.4
+204,District of Columbia,2005,44.4
+205,New York,2005,37.0
+206,New Jersey,2005,33.8
+207,Maryland,2005,29.2
+208,California,2005,26.5
+209,Nevada,2005,25.8
+210,Connecticut,2005,24.4
+211,Florida,2005,24.3
+212,Delaware,2005,23.2
+213,Hawaii,2005,20.6
+255,District of Columbia,2006,40.1
+256,New York,2006,36.2
+257,New Jersey,2006,32.7
+258,Delaware,2006,27.9
+259,California,2006,27.4
+260,Maryland,2006,26.5
+261,Nevada,2006,25.5
+262,Connecticut,2006,24.9
+263,Florida,2006,24.4
+264,Hawaii,2006,21.0
+306,District of Columbia,2007,36.2
+307,New York,2007,35.5
+308,Delaware,2007,32.5
+309,New Jersey,2007,31.6
+310,California,2007,28.3
+311,Connecticut,2007,25.3
+312,Nevada,2007,25.3
+313,Florida,2007,24.8
+314,Maryland,2007,23.9
+315,Hawaii,2007,21.8
+357,District of Columbia,2008,38.4
+358,New York,2008,36.7
+359,Delaware,2008,31.4
+360,New Jersey,2008,31.2
+361,California,2008,27.1
+362,Connecticut,2008,24.6
+363,Florida,2008,24.1
+364,Nevada,2008,23.8
+365,Maryland,2008,23.7
+366,Hawaii,2008,21.7
+408,New York,2009,35.6
+409,District of Columbia,2009,31.6
+410,Delaware,2009,30.7
+411,New Jersey,2009,29.8
+412,California,2009,25.6
+413,Maryland,2009,24.9
+414,Florida,2009,23.6
+415,Connecticut,2009,23.5
+416,Nevada,2009,23.3
+417,Hawaii,2009,21.4
+459,New York,2010,34.5
+460,Delaware,2010,30.0
+461,New Jersey,2010,28.3
+462,Maryland,2010,25.9
+463,District of Columbia,2010,24.9
+464,California,2010,24.0
+465,Florida,2010,23.0
+466,Nevada,2010,22.9
+467,Connecticut,2010,22.4
+468,Hawaii,2010,21.0
+510,New York,2011,33.7
+511,New Jersey,2011,27.0
+512,Maryland,2011,26.9
+513,Delaware,2011,26.2
+514,California,2011,22.4
+515,Florida,2011,22.3
+516,Nevada,2011,21.8
+517,Connecticut,2011,21.2
+518,Hawaii,2011,20.9
+519,District of Columbia,2011,20.3
+561,New York,2012,31.4
+562,New Jersey,2012,26.0
+563,Maryland,2012,24.7
+564,Delaware,2012,22.4
+565,California,2012,21.4
+566,Florida,2012,21.2
+567,District of Columbia,2012,20.8
+568,Connecticut,2012,20.2
+569,Nevada,2012,19.5
+570,Hawaii,2012,18.4
+612,New York,2013,29.1
+613,New Jersey,2013,25.4
+614,Maryland,2013,22.6
+615,District of Columbia,2013,21.4
+616,California,2013,20.5
+617,Florida,2013,20.2
+618,Connecticut,2013,19.5
+619,Delaware,2013,18.6
+620,Virginia,2013,17.8
+621,Nevada,2013,17.2
+663,New York,2014,29.3
+664,New Jersey,2014,25.9
+665,Maryland,2014,22.1
+666,District of Columbia,2014,21.4
+667,Florida,2014,19.7
+668,California,2014,19.5
+669,Connecticut,2014,19.5
+670,Nevada,2014,19.3
+671,Delaware,2014,17.8
+672,Illinois,2014,15.5
+714,New York,2015,28.5
+715,New Jersey,2015,27.0
+716,Maryland,2015,21.8
+717,Connecticut,2015,18.9
+718,Florida,2015,18.6
+719,California,2015,18.4
+720,District of Columbia,2015,18.4
+721,Nevada,2015,17.9
+722,Delaware,2015,16.9
+723,Rhode Island,2015,15.7
+765,New Jersey,2016,28.2
+766,New York,2016,27.4
+767,Maryland,2016,21.7
+768,Connecticut,2016,18.2
+769,Florida,2016,17.5
+770,California,2016,17.3
+771,Nevada,2016,16.5
+772,Delaware,2016,16.1
+773,Rhode Island,2016,16.0
+774,District of Columbia,2016,15.6
+816,New Jersey,2017,28.0
+817,New York,2017,26.3
+818,Maryland,2017,22.7
+819,District of Columbia,2017,21.1
+820,Florida,2017,17.9
+821,Connecticut,2017,17.8
+822,Nevada,2017,16.5
+823,California,2017,16.3
+824,Rhode Island,2017,15.8
+825,Delaware,2017,15.5
